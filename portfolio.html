@@ -12,7 +12,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <style>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<style>
     body{
       background: linear-gradient(to bottom right, #7B68EE, plum); /* Darker lavender to plum */
     color: black;
@@ -104,6 +106,32 @@
     background-color: #333;
     border-radius: 50%;
 }
+.bg-custom-purple {
+    background-color: #ba68c8; 
+  }
+  .centered-img {
+    width: 50%;
+    display: inline-block;
+  }
+  .footer-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #f9f1fa;
+    opacity: 0.8;
+    letter-spacing: 0.12px;
+    margin: 0.5rem 0;
+  }
+
+  .footer-text a {
+    font-size: 20px;
+    color: #f9f1fa;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .footer-text a:hover {
+    color:black; 
+  }
 </style>
 </head>
 <body>
@@ -280,66 +308,14 @@
         </div>
     </div>
 </section>
-
-
-  <!-- Contact Section -->
-  <section id="contact" class="bg-dark text-white py-5">
-    <div class="container">
-      <h2 class="text-center">Contact Me</h2>
-      <form>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" required>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" required>
-            </div>
-          </div>
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-light">Send Message</button>
-      </form>
-    </div>
-  </section>
-  
-  <!-- Footer -->
-  <footer class="bg-success text-white text-center py-4">
-    <p>&copy; 2024 Your Name. All rights reserved.</p>
-  </footer>
-  <script>
-  // Initialize the Bootstrap carousel with a custom interval
-const projectCarousel = document.getElementById('projectCarousel');
-const carousel = new bootstrap.Carousel(projectCarousel, {
-  interval: 3000, // Auto-slide every 3 seconds
-  ride: 'carousel'
-});
-
-// Manually move to the next or previous slide
-document.querySelector('.carousel-control-next').addEventListener('click', () => {
-  carousel.next();
-});
-
-document.querySelector('.carousel-control-prev').addEventListener('click', () => {
-  carousel.prev();
-});
-
-// Listen for slide events (e.g., to trigger animations or load content)
-projectCarousel.addEventListener('slide.bs.carousel', (event) => {
-  console.log('Slide transition starting from slide', event.from, 'to', event.to);
-});
-
-projectCarousel.addEventListener('slid.bs.carousel', (event) => {
-  console.log('Slide transition completed on slide', event.to);
-});
-</script>
+<footer class="footer bg-custom-purple py-4">
+  <div class="container text-center">
+    <p class="footer-text">Welcome to my personal space! I'm Abegail D. Florig, passionate about creativity and connection.</p>
+    <p class="footer-text"> Social Media:  
+      <a href="https://www.facebook.com/abegail.florig.10" target="_blank" class="fab fa-facebook"></a>
+      <a href="https://www.instagram.com/diez_abegail/" target="_blank" class="fab fa-instagram"></a>
+  </div>
+</footer>  
 </body>
 </html>
 
