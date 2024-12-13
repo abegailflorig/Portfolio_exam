@@ -132,10 +132,68 @@
   .footer-text a:hover {
     color:black; 
   }
+  .aboutme{
+    font-weight: bold;
+    color: #34495e;
+    align-items: center;
+    margin-top: 50px;
+}
+h3 {
+    color: #34495e;
+}
+
+.pic {
+    margin-top:-50px;
+    border:1px solid purple;
+    max-width: 200px;
+}
+
+.list-unstyled {
+    padding-left: 0;
+}
+
+.list-unstyled li {
+    margin-bottom: 10px;
+}
+
+.a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.a:hover {
+    text-decoration: underline;
+}
+#about {
+    background-color: white; 
+    border-bottom: 2px solid #eb00cb;
+    border-top: 2px solid #eb00cb;
+}
+
+.button_a {
+    display: inline-block;
+    background-color: white; 
+    color: black; 
+    text-decoration: none; 
+    margin-top: 10px;
+    padding: 5px 10px; 
+    border-radius: 2px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease; 
+}
+
+
+.button_a:hover {
+    background-color: purple; 
+    color: #fff; 
+}
+
+
+
 </style>
 </head>
 <body>
-
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
@@ -158,36 +216,41 @@
       </div>
     </div>
   </nav>
-
-
-  <!-- About Section -->
-  <div class="section-container-items">
-    <section id="home" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-5 about-title">ABOUT ME</h2>
-        <div class="row">
-          <!-- First Column: Introduction -->
-          <div class="col-lg-4 col-md-6 col-12 text-center border border-secondary shadow-sm p-3 gradient-background">
-            <h2>INTRODUCTION</h2>
-            <p>I'm Abegail D. Florig, but you can call me Beng for short. I'm 19 years old and I was born on October 21, 2005. At the moment, I live in Tubod, Iligan City. There are five members in my family. My father's name is Sulpicio M. Florig. He passed away six years ago due to tumor cancer. My mother's name is Sisinia D. Florig; she is a lovely housewife. I have two siblings, one brother and one sister. My brother's name is Jerome D. Florig; he is twenty-three years old. My sister's name is Jamie D. Florig; she is twenty years old.</p>
-          </div>
-  
-          <!-- Second Column: Hobbies -->
-          <div class="col-lg-4 col-md-6 col-12 text-center border border-secondary shadow-sm p-3 gradient-background">
-            <h2>MY HOBBIES</h2>
-            <p>My hobbies on online platforms include playing Mobile Legends and Call of Duty, watching Netflix, YouTube, and TikTok. I also use Facebook, Instagram, and Twitter to post my rants, pictures, and stories about my day. In sports, I play badminton, but I also want to learn sports like volleyball and basketball. I aim to learn their rules and techniques to avoid accidents.</p>
-          </div>
-  
-          <!-- Third Column: Things I Like, Favorites and Experiences -->
-          <div class="col-lg-4 col-md-6 col-12 text-center border border-secondary shadow-sm p-3 gradient-background">
-            <h2>THINGS I LIKE, FAVORITES, and EXPERIENCES</h2>
-            <p>My favorite foods, desserts, and drinks include fried chicken, spaghetti, caldereta, nilagang baboy, mango float, cake, iced coffee, milk tea, and soft drinks. I love cooking and doing household chores. I had an OJT at Tita Fannies in Palao. It was very memorable for me because I learned about workplace conduct and what to do and what not to do. Unfortunately, I couldn't pursue my desired course, which is HM, due to financial constraints.</p>
-          </div>
-        </div>
+  <section id="about" class="py-5">
+    <div class="container mt-5">
+      <div class="text-center mb-4">
+          <h2 class="aboutme">About Me</h2>
+         
       </div>
-    </section>
+      <div class="row align-items-center">
+          <!-- Image Section -->
+          <div class="col-md-4 text-center">
+              <img src="pic1.jfif" class="pic" alt="Profile Picture" class="img-fluid ">
+          </div>
+          <!-- Content Section -->
+          <div class="col-md-8">
+              <h3 class="fw-bold">2nd year, Bachelor of Science in Information Technology</h3>
+              <div class="row">
+                  <div class="col-md-6">
+                      <ul class="list-unstyled">
+                          <li><strong>Birthday:</strong> 21 October 2005</li>
+                          <li><strong>Phone:</strong> 0909 616 7262</li>
+                          <li><strong>City:</strong> Tubod, Iligan City</li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6">
+                      <ul class="list-unstyled">
+                          <li><strong>Age:</strong> 19</li>
+                          <li><strong>Course:</strong> College of Computer Studies</li>
+                          <li><strong>Email:</strong> <a href="abegailflorig.202300784@gmail.com" class="a">abegailflorig.202300784@gmail.com</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <p>I'm Abegail D. Florig, passionate about creativity and connection.</p>
+          </div>
+      </div>
   </div>
-  
+  </section>
   <!-- Language Section -->
   <section id="Language" class="bg-light py-5">
     <div class="container">
@@ -232,9 +295,6 @@
       </div>
     </div>
   </section>
-  
-  
-
   <!-- Projects Section -->
   <section id="projects" class="py-5">
     <div class="container">
@@ -246,10 +306,8 @@
                 <div class="carousel-item active">
                     <div class="row d-flex justify-content-center">
                         <div class="col-md-4 text-center">
-                          <a href="weather.html">
-                            <img src="project1.png" class="img-fluid" alt="Project 1">
-                        </a>
-                            <h5 class="mt-3">Iligan-Weather Update</h5>
+                          <img src="project1.png" class="img-fluid" alt="Project 1">
+                          <a href="https://abegailflorig.github.io/Florig_weather-app/" class="button_a">Iligan-Weather Update</a>
                             <p>First Lab Activity</p>
                         </div>
                     </div>
@@ -258,10 +316,8 @@
                 <div class="carousel-item">
                     <div class="row d-flex justify-content-center">
                         <div class="col-md-4 text-center">
-                          <a href="weather.html">
                             <img src="project2.png" class="img-fluid" alt="Project 2">
-                          </a>
-                            <h5 class="mt-3"> Weather Update</h5>
+                            <a href="https://abegailflorig.github.io/final-update/" class="button_a">Weather Update</a>
                             <p>Enter a different city name and fetch weather data for that city. </p>
                         </div>
                     </div>
@@ -271,14 +327,9 @@
                 <div class="carousel-item">
                     <div class="row d-flex justify-content-center">
                         <div class="col-md-4 text-center">
-                          <a href="contact.html">
-                            <img src="project3.png" class="img-fluid" alt="Project 3">
-                          </a>
-                          
-                            <h5 class="mt-3">Contact Form with EmailJS</h5>
-                        
-                            <p>In this activity you will create a contact form and integrate the EmailJS for sending an email.
-                            </p>
+                        <img src="project3.png" class="img-fluid" alt="Project 3">
+                        <a href="https://abegailflorig.github.io/EmailJS/" class="button_a">Contact Form</a>
+                        <p>In this activity you will create a contact form and integrate the EmailJS for sending an email.</p>
                         </div>
                     </div>
                 </div>
@@ -286,11 +337,9 @@
                 <div class="carousel-item">
                   <div class="row d-flex justify-content-center">
                       <div class="col-md-4 text-center">
-                        <a href="weather.html"></a>
                           <img src="project4.png" class="img-fluid" alt="Project 4">
-                        </a>
-                          <h5 class="mt-3">Project 4</h5>
-                          <p>Branding, Motion</p>
+                          <a href="https://abegailflorig.github.io/E-commerce_FLORIG/" class="button_a">E-commerce Website</a>
+                        <p>Branding, Motion</p>
                       </div>
                   </div>
               </div>
@@ -308,6 +357,33 @@
         </div>
     </div>
 </section>
+<!-- About Section -->
+<div class="section-container-items">
+  <section id="home" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 about-title">ABOUT ME</h2>
+      <div class="row">
+        <!-- First Column: Introduction -->
+        <div class="col-lg-4 col-md-6 col-12 text-center border border-secondary shadow-sm p-3 gradient-background">
+          <h2>INTRODUCTION</h2>
+          <p>I'm Abegail D. Florig, but you can call me Beng for short. I'm 19 years old and I was born on October 21, 2005. At the moment, I live in Tubod, Iligan City. There are five members in my family. My father's name is Sulpicio M. Florig. He passed away six years ago due to tumor cancer. My mother's name is Sisinia D. Florig; she is a lovely housewife. I have two siblings, one brother and one sister. My brother's name is Jerome D. Florig; he is twenty-three years old. My sister's name is Jamie D. Florig; she is twenty years old.</p>
+        </div>
+
+        <!-- Second Column: Hobbies -->
+        <div class="col-lg-4 col-md-6 col-12 text-center border border-secondary shadow-sm p-3 gradient-background">
+          <h2>MY HOBBIES</h2>
+          <p>My hobbies on online platforms include playing Mobile Legends and Call of Duty, watching Netflix, YouTube, and TikTok. I also use Facebook, Instagram, and Twitter to post my rants, pictures, and stories about my day. In sports, I play badminton, but I also want to learn sports like volleyball and basketball. I aim to learn their rules and techniques to avoid accidents.</p>
+        </div>
+
+        <!-- Third Column: Things I Like, Favorites and Experiences -->
+        <div class="col-lg-4 col-md-6 col-12 text-center border border-secondary shadow-sm p-3 gradient-background">
+          <h2>THINGS I LIKE, FAVORITES, and EXPERIENCES</h2>
+          <p>My favorite foods, desserts, and drinks include fried chicken, spaghetti, caldereta, nilagang baboy, mango float, cake, iced coffee, milk tea, and soft drinks. I love cooking and doing household chores. I had an OJT at Tita Fannies in Palao. It was very memorable for me because I learned about workplace conduct and what to do and what not to do. Unfortunately, I couldn't pursue my desired course, which is HM, due to financial constraints.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 <footer class="footer bg-custom-purple py-4">
   <div class="container text-center">
     <p class="footer-text">Welcome to my personal space! I'm Abegail D. Florig, passionate about creativity and connection.</p>
